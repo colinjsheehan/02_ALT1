@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form with Visualisation</title>
+</head>
+<body>
+    <h1>Contact Form</h1>
+
+    <!-- Contact Form (as you have already set it up) -->
+    <form>
+        <input type="email" id="email" placeholder="Enter your email">
+        <button type="button" onclick="saveContact()">Submit</button>
+    </form>
+    <div id="response"></div>
+
+    <!-- Embed ThingSpeak Chart -->
+    <h2>Sign-Up Count Visualisation</h2>
+    <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2720054/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line"></iframe>
+
+    <!-- Link to Firebase and custom JavaScript file -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>
